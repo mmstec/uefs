@@ -42,3 +42,26 @@ Siga os passos abaixo:
 ```
 $ python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 ```
+*** Para ter acesso a --public_key e --private_key, é preciso permissão especial solicitada junto ao orientador deste trabalho.
+
+## 🎁 Instituição de Ensino
+
+* [UEFS - Universidade Estadual de Feira de Santana](https://www.uefs.br/) <br />
+* [PGCC - Pós-Graduação em Ciências da Computação](https://pgcc.uefs.br/home) <br />
+* PGCC002 - Computação de Alto Desempenho <br />
+* Orientador - [Angelo Amâncio Duarte] (https://pgcc.uefs.br/sobre/docentes/angeloduarte) <br /> 
+* Coorientador - [Washington L.C. dos Santos] (https://scholar.google.com.br/citations?user=fr3-PGsAAAAJ&hl=pt-BR) <br /> 
+
+## 🚀 Citação
+
+```
+@MISC{contapalavras,
+    author = {Luciano Junior, Marcos Morais},
+    title = {{Contador de Frequencia de Palavras em MPI}},
+    howpublished = "\url{https://github.com/mmstec/PGCC011-TB2}",
+    year = {2021},
+  }
+```
+## 📄 Licença
+
+Este projeto está sob a licença - veja o arquivo [LICENSE.md](https://github.com/mmstec/PGCC011/blob/main/LICENSE.md) para detalhes.
