@@ -2,7 +2,7 @@
 
 ## 🎁 Sobre
 
-Este projeto tem como objetivo principal atender a uma demanda avaliativa na disciplina PGCC011 (Computação de Alto Desempenho) do Programa de Pós-Graduação em Ciências da Computação (stricto sensu) da Universidade Estadual de Feira de Santana. Para tanto, o presente projeto deve contribuir na verificação do comportamento da escalabilidade de códigos seriais nas linguagens C, bem como as possíveis razões para as diferenças (ou não) de desempenho. Desta forma, foram desenvolvidos os códigos serial e paralelo na linguagem de programação C++ para cômputo da frequência de palavras em arquivos textos.
+Este trabalho tem como objetivo principal, apresentar um método computacional para estimação de Fibrose Intersticial, critério usado no Tratamento Renal Substitutivo ( TRS ), a partir de imagens digitais de biópsias renais, sob a perspectiva do Escore de Bunff para Lesão.
 
 ## 🚀 Começando
 
