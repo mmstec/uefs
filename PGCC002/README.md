@@ -1,4 +1,4 @@
-# Contador de Frequência de Palavras MPI
+# segmentador.py
 
 ## 🎁 Sobre
 
