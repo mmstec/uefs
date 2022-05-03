@@ -358,10 +358,11 @@ if __name__ == '__main__':
     parametros, _ = parser.parse_known_args(sys.argv[1:])
 
     # comunicando com o cytomine na fiocruz
+    # obs. os parametros das linhas comentadas devem ser passadas por argumento na chamada do script.
     print("Processamento iniciado.")
     parametros.host = 'http://pathospotter-cytomine-core.bahia.fiocruz.br'
-    parametros.public_key = '95ee644c-5c39-451d-922b-512c43975550'
-    parametros.private_key = '248ac4ea-a5e0-43a6-89d1-3a88343e221c'
+    # parametros.public_key = 'AAA'
+    # parametros.private_key = 'ZZZ'
     parametros.dir_dataset = 'dataset_t'
     parametros.dir_alpha = 'alpha'
     parametros.dir_mascara = 'mascara'
@@ -369,9 +370,11 @@ if __name__ == '__main__':
     parametros.dir_kappa = parametros.dir_dataset
 
     '''
-    Este script também está disponível no Github. Para executá-lo, o comando deve ser assim:
+    Este script também está disponível no Github. 
+    Para executá-lo, o comando deve ser assim:
     python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
     '''
+    
     # projetos disponíveis no cytomine
     projetos = ['8163', '169854', '261318', '261334', '261372']
     for i in range(0, len(projetos)):
