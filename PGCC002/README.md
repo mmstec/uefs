@@ -1,7 +1,7 @@
 
 # 🎁 Sobre
 
-Este trabalho tem como objetivo principal, apresentar um método computacional para estimação de Fibrose Intersticial, critério usado no Tratamento Renal Substitutivo ( TRS ), a partir de imagens digitais de biópsias renais, sob a perspectiva do Escore de Bunff para Lesão.
+Este trabalho tem como objetivo principal, apresentar um método computacional para estimação de Fibrose Intersticial, critério usado no Tratamento Renal Substitutivo ( TRS ), a partir de imagens digitais de biópsias renais, sob a perspectiva do Escore de Banff para Lesão.
 Os Arquivos necessários e todas as orientações para uso deste projeto, estão neste repositório.
  
 # ❕ Pré-Requisitos
