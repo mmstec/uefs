@@ -31,12 +31,18 @@ from cytomine.models import ImageInstance, ImageInstanceCollection
 from cytomine.models import User, UserCollection
 
 __author__ = "Marcos Morais <mmstec@gmail.com>"
-# NOTA:
-# Este script é um exemplo que permite obter a lista de imagens (metadados) em um determinado projeto no software de anotaçao, Cytomine.
-# Se os parametros como o caminho de download for fornecido, ele baixa todas as imagens anotadas no Cytomine.
-# Após baixadas as imagens anotadas no Cytomine, este script quantifica a fibrose intersticial presente nas imagens, desde que essas imagens tenham sidos coradas com tricrômico de Masson
-# Além disso, um arquivo .CSV é gravado com informações geradas por este script.
 
+'''
+  NOTA:
+  Este script é um exemplo que permite obter a lista de imagens (metadados) em um determinado projeto no software de anotaçao, Cytomine.
+  Se os parametros como o caminho de download for fornecido, ele baixa todas as imagens anotadas no Cytomine.
+  Após baixadas as imagens anotadas no Cytomine, este script quantifica a fibrose intersticial presente nas imagens, desde que essas imagens tenham sidos coradas com tricrômico de Masson
+  Além disso, um arquivo .CSV é gravado com informações geradas por este script.
+
+  Este script também está disponível no Github. 
+  Para executá-lo, o comando deve ser assim:
+  python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
+'''
 
 def gerador_arquivocsv(executar, destino_arquivo,
                        nome_arquivo,
@@ -369,12 +375,6 @@ if __name__ == '__main__':
     parametros.dir_segmentacao = 'segmentacao'
     parametros.dir_kappa = parametros.dir_dataset
 
-    '''
-    Este script também está disponível no Github. 
-    Para executá-lo, o comando deve ser assim:
-    python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
-    '''
-    
     # projetos disponíveis no cytomine
     projetos = ['8163', '169854', '261318', '261334', '261372']
     for i in range(0, len(projetos)):
@@ -382,3 +382,10 @@ if __name__ == '__main__':
         get_cytomine(parametros)
         print("Contando: ", i+1)
     print("Processamento concluído.")
+    
+'''
+  Este script também está disponível no Github. 
+  Para executá-lo, o comando deve ser assim:
+  python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
+'''
+    
