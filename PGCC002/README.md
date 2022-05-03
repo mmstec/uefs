@@ -42,7 +42,7 @@ Siga os passos abaixo:
 ## 🎯 Execução 
 *Para executá-lo, o comando deve ser assim:*
 ```
-$ python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
+$ python estimadorfi.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 ```
 
 *Nota:* 
