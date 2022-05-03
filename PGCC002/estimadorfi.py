@@ -351,7 +351,7 @@ def extratorNomeArquivo(string):
 
 
 if __name__ == '__main__':
-    parser = ArgumentParser(prog="Segmentador")
+    parser = ArgumentParser(prog="Estimador de Fibrose Intersticial")
     parser.add_argument('--host', help="Onde o Cytomine está hospedado")
     parser.add_argument('--public_key', help="A chave pública Cytomine")
     parser.add_argument('--private_key', help="A chave privada Cytomine")
@@ -386,6 +386,6 @@ if __name__ == '__main__':
 '''
   Este script também está disponível no Github. 
   Para executá-lo, o comando deve ser assim:
-  python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
+  python estimadorfi.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 '''
     
