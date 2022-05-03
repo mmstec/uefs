@@ -42,7 +42,7 @@ Siga os passos abaixo:
 ```
 $ python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 ```
-*** Para ter acesso a --public_key e --private_key, é preciso permissão especial solicitada junto ao orientador deste trabalho.
+*** Nota: Para ter acesso a --public_key e --private_key, é preciso permissão especial solicitada junto ao orientador deste trabalho.
 
 # 🎁 Instituição de Ensino
 
