@@ -10,8 +10,8 @@ O método aqui apresentado, comunica-se com o software de anotação Cytomine. E
 Para a comunicação entre o algoritimo seguimentador, é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algortimo desenvolvido funicona em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
 
 Para instalação do Cytomine e da API Cytomine, consultar a documentação disponível em:
-- https://doc.cytomine.org/admin-guide/install (Cytomine)
-- https://doc.uliege.cytomine.org/dev-guide/clients/python/installation (Api Cytomine )
+- https://doc.cytomine.org/admin-guide/install ( Cytomine )
+- https://doc.uliege.cytomine.org/dev-guide/clients/python/installation ( Api Cytomine )
 
 # 🔑 Requisitos
 
@@ -23,11 +23,11 @@ Para instalação do Cytomine e da API Cytomine, consultar a documentação disp
 -Processador: Dual-core AMD 64, EM64T
 -Sistemas Operacionais: GNU/Linux, Windows, MacOS.
 
-É preciso fornecer espaço suficiente para armazenar as imagens (depende do tamanho deles).
+É preciso fornecer espaço suficiente para armazenar as imagens que serão analisadas ( depende do tamanho ).
 
 ### Software
 O Segmentador pode ser instalada em qualquer sistema operacional que suporte versões recentes do Python e do OpenCV. 
-A maioria das distribuições Linux (incluindo Ubuntu, CentOS) e Mac OS X Yosemite e acima atendem bem.
+A maioria das distribuições Linux ( incluindo Ubuntu, CentOS ) e Mac OS X Yosemite e acima atendem bem.
 
 # ✔️ Instalar
 Siga os passos abaixo:
@@ -44,24 +44,24 @@ $ python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.b
 ```
 *** Para ter acesso a --public_key e --private_key, é preciso permissão especial solicitada junto ao orientador deste trabalho.
 
-## 🎁 Instituição de Ensino
+# 🎁 Instituição de Ensino
 
 * [UEFS - Universidade Estadual de Feira de Santana](https://www.uefs.br/) <br />
 * [PGCC - Pós-Graduação em Ciências da Computação](https://pgcc.uefs.br/home) <br />
-* PGCC002 - Computação de Alto Desempenho <br />
-* Orientador - [Angelo Amâncio Duarte] (https://pgcc.uefs.br/sobre/docentes/angeloduarte) <br /> 
-* Coorientador - [Washington L.C. dos Santos] (https://scholar.google.com.br/citations?user=fr3-PGsAAAAJ&hl=pt-BR) <br /> 
+* PGCC002 - Exame de Qualificação<br />
+* Orientador - [Angelo Amâncio Duarte](https://pgcc.uefs.br/sobre/docentes/angeloduarte) <br /> 
+* Coorientador - [Washington L.C. dos Santos](https://scholar.google.com.br/citations?user=fr3-PGsAAAAJ&hl=pt-BR) <br /> 
 
-## 🚀 Citação
+# 🚀 Citação
 
 ```
-@MISC{contapalavras,
-    author = {Luciano Junior, Marcos Morais},
-    title = {{Contador de Frequencia de Palavras em MPI}},
-    howpublished = "\url{https://github.com/mmstec/PGCC011-TB2}",
-    year = {2021},
+@MISC{estimadorfi2022,
+    author = {Marcos Morais},
+    title = {{Estimador de Fibrose Intersticial}},
+    howpublished = "\url{https://github.com/mmstec/uefs}",
+    year = {2022},
   }
 ```
-## 📄 Licença
+# 📄 Licença
 
-Este projeto está sob a licença - veja o arquivo [LICENSE.md](https://github.com/mmstec/PGCC011/blob/main/LICENSE.md) para detalhes.
+Este projeto está sob a licença - veja o arquivo [LICENSE](https://github.com/mmstec/uefs/blob/main/LICENSE) para detalhes.
