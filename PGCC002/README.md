@@ -19,7 +19,7 @@ Para instalação do Cytomine e da API Cytomine, consultar a documentação disp
 
 ### Hardware
 
-É necessário um mínimo de:
+É recomendado um mínimo de:
 -memória RAM : 8GB
 -Espaço em Disco: 20GB
 -Processador: Dual-core AMD 64, EM64T
