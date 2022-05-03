@@ -1,4 +1,4 @@
-// Programa C++ para calcular a frequência
+// Programa C++ para calcular a frequÃªncia
 // de cada palavra na string dada
 #include <bits/stdc++.h>
 #include <locale>
@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Função para imprimir a frequência de cada palavra
+// FunÃ§Ã£o para imprimir a frequÃªncia de cada palavra
 std::map<std::string, int> mapearPalavras(string linha, map<string, int> M){
 	// String para armazenar a palavra
 	string palavra = "";
@@ -14,20 +14,20 @@ std::map<std::string, int> mapearPalavras(string linha, map<string, int> M){
 	for (int i = 0; i < linha.size(); i++){
 		c=tolower(linha[i]);
     	// Verifique se o caractere atual
-        // é  um espaço em branco então
+        // Ã©  um espaÃ§o em branco entÃ£o
         // significa que temos uma palavra
 		if (c == ' '){
 			if (palavra.size()>1)
 			{
 				// Se a palavra atual
-	            // não for encontrado, insira
-	            // palavra atual com frequência 1
+	            // nÃ£o for encontrado, insira
+	            // palavra atual com frequÃªncia 1
 				if (M.find(palavra) == M.end())
 				{
 					M.insert(make_pair(palavra, 1));
 					palavra = "";
 				}
-				// atualiza a frequêcia
+				// atualiza a frequÃªcia
 				else
 				{
 					M[palavra]++;
@@ -38,16 +38,16 @@ std::map<std::string, int> mapearPalavras(string linha, map<string, int> M){
 				palavra = "";
 			}
 		}
-        // Se o caractere atual for uma das opções abaixo,adicionar na palavra     
+        // Se o caractere atual for uma das opÃ§Ãµes abaixo,adicionar na palavra     
         if((c>=97 && c<=122)||(c>=-32 && c<=-1))
-		{//Aqui temos os numerais dos caracteres de letras e acentuações na tabela ASCII
+		{//Aqui temos os numerais dos caracteres de letras e acentuaÃ§Ãµes na tabela ASCII
            palavra += c;            
         }
                    
 	}
 	if (palavra.size()>1)
 	{
-		// Armazenando a última palavra da string
+		// Armazenando a Ãºltima palavra da string
 		if (M.find(palavra) == M.end())
 			M.insert(make_pair(palavra, 1));
 		// Atualiza a frequencia 
@@ -63,7 +63,7 @@ std::map<std::string, int> mapearPalavras(string linha, map<string, int> M){
 
 std::multimap<int, string> sort(map<string, int>& M){
   
-    //Declara um multimap para realizar a ordenação
+    //Declara um multimap para realizar a ordenaÃ§Ã£o
     multimap<int, string> MM;
   
     // Insere cada par (chave-valor) do
@@ -75,10 +75,10 @@ std::multimap<int, string> sort(map<string, int>& M){
     return MM;
 }
 
-// função principal
+// funÃ§Ã£o principal
 int main(){
 	setlocale(LC_ALL,"Portuguese");
-	omp_set_num_threads(4); // determina o número de threads
+	omp_set_num_threads(4); // determina o nÃºmero de threads
 	//printf("%d", omp_get_num_threads());
 	map<string, int> Mapas[4];
 	map<string, int> MapaJunto;
@@ -101,11 +101,11 @@ int main(){
 	{
 	  	while (!feof(arq))
 		{
-			// Lê uma linha 
-			result = fgets(Linha, 1000, arq);  // o 'fgets' lê até 999 caracteres ou até o '\n'
+			// LÃª uma linha 
+			result = fgets(Linha, 1000, arq);  // o 'fgets' lÃª atÃ© 999 caracteres ou atÃ© o '\n'
 			if (result)
 			{
-		    	// Se foi possível ler
+		    	// Se foi possÃ­vel ler
 	      		Mapas[omp_get_thread_num()] = mapearPalavras(result, Mapas[omp_get_thread_num()]);
 			}
   	    }
@@ -130,13 +130,13 @@ int main(){
 	MapaOrdenado=sort(MapaJunto);
 	qntValores= 20; //PERSONALIZAR QUANTIDADE DE VALORES A SEREM IMPRESSOS
     	
-    // Gerar Arquivo de Saída:
+    // Gerar Arquivo de SaÃ­da:
   	std::multimap<int,string>::reverse_iterator rit;
   	rit=MapaOrdenado.rbegin();
   	freopen("resultadoOMP.txt","w",stdout);
   	for (i=0; i<qntValores; i++)
 	{
-    	//Garante que qntValores não é maior que quantidade de palavras no arquivo
+    	//Garante que qntValores nÃ£o Ã© maior que quantidade de palavras no arquivo
 		if(MapaOrdenado.size()<=(unsigned)i)
 		{
         	break;
