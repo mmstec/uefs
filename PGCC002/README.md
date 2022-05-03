@@ -6,10 +6,12 @@ Os Arquivos necessários e todas as orientações para uso deste projeto, estão
  
 ## ❕ Pré-Requisitos
 
-O método aqui apresentado, comunica-se com o software de anotação Cytomine. E, portanto o mesmo é requerido para que o funcionamento ocorra como esperado. 
-Para a comunicação entre o algoritimo seguimentador, é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algortimo desenvolvido funicona em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
+O método aqui apresentado, comunica-se com o software de anotação Cytomine. E, portanto, o mesmo é requerido para que o funcionamento ocorra como esperado. 
+
+Para a comunicação entre o algoritmo segmentador, é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algoritmo desenvolvido funcionam em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
 
 Para instalação do Cytomine e da API Cytomine, consultar a documentação disponível em:
+
 - https://doc.cytomine.org/admin-guide/install ( Cytomine )
 - https://doc.uliege.cytomine.org/dev-guide/clients/python/installation ( Api Cytomine )
 
@@ -26,7 +28,7 @@ Para instalação do Cytomine e da API Cytomine, consultar a documentação disp
 É preciso fornecer espaço suficiente para armazenar as imagens que serão analisadas ( depende do tamanho ).
 
 ### Software
-O Segmentador pode ser instalada em qualquer sistema operacional que suporte versões recentes do Python e do OpenCV. 
+O script segmentador.py pode ser instalado em qualquer sistema operacional que suporte versões recentes do Python e do OpenCV. 
 A maioria das distribuições Linux ( incluindo Ubuntu, CentOS ) e Mac OS X Yosemite e acima atendem bem.
 
 ## ✔️ Instalar
