@@ -6,7 +6,7 @@ Os Arquivos necessários e todas as orientações para uso deste projeto, estão
  
 ## ❕ Pré-Requisitos
 
-O método computacional para seguimentação de fibrose intersticial aqui apresentado, comunica-se com um software de anotação, o Cytomine. Portanto, o Cytomine é requerido para que o funcionamento ocorra como esperado. 
+O método computacional para segmentação de fibrose intersticial aqui apresentado, comunica-se com um software de anotação, o Cytomine. Portanto, o Cytomine é requerido para que o funcionamento ocorra como esperado. 
 
 Para a comunicação entre o algoritmo segmentador e o software de anotação , é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algoritmo desenvolvido funcionam em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
 
