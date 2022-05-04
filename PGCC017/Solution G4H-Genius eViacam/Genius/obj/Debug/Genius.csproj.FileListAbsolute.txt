@@ -1,0 +1,38 @@
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\bin\Debug\Genius.exe
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\bin\Debug\Genius.pdb
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.csprojResolveAssemblyReference.cache
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.frmGenius.resources
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.Properties.Resources.resources
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.csproj.GenerateResource.Cache
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.exe
+C:\MMSTEC\DESENVOLVIMENTO\VISTUDIO2012\JOGOS\Solution Genius\Genius\obj\Debug\Genius.pdb
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.csproj.GenerateResource.cache
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.exe
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.pdb
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\bin\Debug\Genius.exe
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\bin\Debug\Genius.pdb
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.Properties.Resources.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.frmSobre.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.frmSplashScreen.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.frmGenius_v2.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\obj\Debug\Genius.csproj.AssemblyReference.cache
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\bin\Debug\frmGenius_v2.resx
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\bin\Debug\frmGenius_v2.cs
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius\Genius\bin\Debug\frmGenius_v2.Designer.cs
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\eViacam.exe
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\Genius.exe
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\Genius.pdb
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.frmSobre.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.Properties.Resources.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.frmSplashScreen.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.csproj.GenerateResource.cache
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.exe
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.pdb
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\Leiame.txt
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\frmGenius.resx
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\frmGenius.cs
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\bin\Debug\frmGenius.Designer.cs
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.frmGenius.resources
+D:\Desenvolvimento\VISUALSTUDIO2019\Solution G4H-Genius eViacam\Genius\obj\Debug\Genius.csproj.AssemblyReference.cache
