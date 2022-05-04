@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genius", "Genius\Genius.csproj", "{287AD3C0-7E97-4E2D-831F-BEC141200969}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Genius\Instalador\Instalador\Instalador.vdproj", "{30D0631E-0EFF-4B6F-BFB4-79B430DB9DE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{287AD3C0-7E97-4E2D-831F-BEC141200969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287AD3C0-7E97-4E2D-831F-BEC141200969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287AD3C0-7E97-4E2D-831F-BEC141200969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287AD3C0-7E97-4E2D-831F-BEC141200969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D0631E-0EFF-4B6F-BFB4-79B430DB9DE5}.Debug|Any CPU.ActiveCfg = Debug
+		{30D0631E-0EFF-4B6F-BFB4-79B430DB9DE5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C0B9F32-3DDC-4593-9F21-7D39BB47F30F}
+	EndGlobalSection
+EndGlobal
