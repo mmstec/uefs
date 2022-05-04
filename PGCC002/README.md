@@ -6,9 +6,9 @@ Os Arquivos necessários e todas as orientações para uso deste projeto, estão
  
 ## ❕ Pré-Requisitos
 
-O método aqui apresentado, comunica-se com o software de anotação Cytomine. E, portanto, o mesmo é requerido para que o funcionamento ocorra como esperado. 
+O método computacional para segmentação de fibrose intersticial aqui apresentado, comunica-se com um software de anotação, o Cytomine. Portanto, o Cytomine é requerido para que o funcionamento ocorra como esperado. 
 
-Para a comunicação entre o algoritmo segmentador, é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algoritmo desenvolvido funcionam em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
+Para a comunicação entre o algoritmo segmentador e o software de anotação , é preciso de internet e da API Cytomine. Como o Cytomine, a API e o algoritmo desenvolvido funcionam em Python, é necessário que o mesmo esteja instalado no computador em conjunto com o framework OpenCV versão 3.9.
 
 Para instalação do Cytomine e da API Cytomine, consultar a documentação disponível em:
 
@@ -19,7 +19,7 @@ Para instalação do Cytomine e da API Cytomine, consultar a documentação disp
 
 ### Hardware
 
-É necessário um mínimo de:
+É recomendado um mínimo de:
 -memória RAM : 8GB
 -Espaço em Disco: 20GB
 -Processador: Dual-core AMD 64, EM64T
@@ -42,7 +42,7 @@ Siga os passos abaixo:
 ## 🎯 Execução 
 *Para executá-lo, o comando deve ser assim:*
 ```
-$ python segmentador.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
+$ python estimadorfi.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 ```
 
 *Nota:* 
