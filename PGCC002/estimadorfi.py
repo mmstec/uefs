@@ -13,12 +13,14 @@
 # * SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas.
 
 # pacotes necessários
-import os, sys
+import os
+import sys
 import cv2
 from matplotlib import image
 import numpy as np
 import matplotlib.pyplot as plt
-import csv, re
+import csv
+import re
 from collections import OrderedDict
 from argparse import ArgumentParser
 from cytomine import Cytomine
@@ -40,6 +42,8 @@ __author__ = "Marcos Morais <mmstec@gmail.com>"
   Para executá-lo, o comando deve ser assim:
   python estimadorfi.py --host http://pathospotter-cytomine-core.bahia.fiocruz.br --public_key AAA --private_key ZZZ
 '''
+
+
 def get_cytomine(parametros):
     parametros
     with Cytomine(parametros.host, parametros.public_key, parametros.private_key) as cytomine:
@@ -136,6 +140,8 @@ def get_cytomine(parametros):
                                           parametros=parametros)
         return resultado
     ### FIM método get de comunicação com o software de anotação ############################
+
+
 def set_cytomine(parametros):
     p = parametros
     with Cytomine(p.host, p.public_key, p.private_key) as cytomine:
@@ -149,6 +155,8 @@ def set_cytomine(parametros):
             except:
                 print('erro ', prop)
     ### FIM método set de comunicação com o software de anotação ############################
+
+
 def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imagem_nome, anotacao_id, estima_fi_humano, parametros):
     if(executar):
         # Em OPenCV, a escala de cor HSV vai de 0~179
@@ -180,7 +188,8 @@ def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imag
         segmentacao = cv2.bitwise_and(imagem, imagem, mask=mascara)
         # destacando a segmentacao sobre a imagem original (osfuscada)
         sobreposicao = cv2.addWeighted(segmentacao, 0.9, imagem, 0.4, 0)
-        # -----------
+
+        # USEI A TÉCNICA, MAS SEM MELHORIA NOS RESULTADOS
         # desfoque = cv2.GaussianBlur(mascara, (5, 5), 0)
         # sobel_x = cv2.Sobel(desfoque, cv2.CV_64F, 1, 0, ksize=3)  # filtro eixo x (limiar)
         # sobel_y = cv2.Sobel(desfoque, cv2.CV_64F, 0, 1, ksize=3)  # filtro eixo y
@@ -193,26 +202,26 @@ def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imag
         # erosao = cv2.erode(dilatacao, kernel, iterations=1)
         # borda = cv2.bitwise_and(imagem, imagem, mask=erosao)
         # sobreposicao = cv2.addWeighted(borda, 1, imagem, 0.4, 0)
-        # -----------
-        # ~
-        # procurar os contornos, procura contornos dentro dos contornos, aproxima os contornos
+
+        # procurar os contornos e normaliza
         tmp = cv2.findContours(mascara, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         # compatibilidade entre versões diferentes do OpenCV
         contornos = tmp[0] if len(tmp) == 2 else tmp[1]
-        # retorna 3 parametros, 1)imagens, 2contornos,3) hierarquia dos contornos
-        # Desenha os contornos
-        # imagem, contornos, (-1) são todos, a cor, espessura
+        # retorna 3 parametros, 1)imagens, 2)contornos,3) hierarquia dos contornos
+        # Desenha os contornos: imagem, contornos, (-1) são todos, a cor, espessura
         cv2.drawContours(sobreposicao, contornos, -1, (255, 0, 0), 2)
         #
         ##########################################################################
+
         # FORMA 01
-        # pegando valores de dimessão da imagem total e segmentada
-        imagemFull = imagem.shape[0]*imagem.shape[1]
-        imagemMask = cv2.countNonZero(mascara)
-        # estimando percentual FI
-        resultadoFI = round((imagemMask*100/imagemFull))
-        print("Método de cálculo 1->Fibrose: "+str(resultadoFI)+"%")
-        ##########################################################################
+        # # pegando valores de dimessão da imagem total e segmentada
+        # imagemFull = imagem.shape[0]*imagem.shape[1]
+        # imagemMask = cv2.countNonZero(mascara)
+        # # estimando percentual FI
+        # resultadoFI = round((imagemMask*100/imagemFull))
+        # print("Estimando->Fibrose: "+str(resultadoFI)+"%")
+        # ##########################################################################
+
         # FORMA 02
         # calculando a quantidade de pixels
         pixelsBranco = np.sum(mascara == 255)  # somente branco (mascara)
@@ -221,7 +230,7 @@ def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imag
         pixelsFull = pixelsBranco + pixelsPreto
         # estimando percentual FI
         resultadoFI = round(pixelsBranco*100/pixelsFull)
-        print("Método de cálculo 2->Fibrose: "+str(resultadoFI)+"%")
+        print("Estimando->Fibrose: "+str(resultadoFI)+"%")
         ##########################################################################
 
         # preparando caminho para arquivo mascara
@@ -252,6 +261,8 @@ def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imag
 
         return str(resultadoFI)+'%'
     ### FIM método estimador de fibrose (segmenta imagem) ###################################
+
+
 def geradorArquivoCSV(executar, destino_arquivo,
                       nome_arquivo,
                       projeto_id,
@@ -301,6 +312,8 @@ def geradorArquivoCSV(executar, destino_arquivo,
             writer.writerow(data)
             f.close
     ### FIM método gerador de arquivo csv ###################################################
+
+
 def mostrarImagens(executar, imagen, mascara, sobreposicao, segmentacao, resultado, projeto_id, projeto_nome, imagem_id, imagem_nome, anotacao_id):
     if(executar):
         # imagens e respectivos titulos
@@ -329,10 +342,14 @@ def mostrarImagens(executar, imagen, mascara, sobreposicao, segmentacao, resulta
             plt.subplots_adjust(wspace=0.1)
         plt.show()
     ### FIM método exibidor de imagens ######################################################
+
+
 def extratorNomeArquivo(string):
     regex = re.compile('\W+')
     string = regex.split(string)
     return string[2].upper()+"."+string[3].upper()
+
+
     ### FIM método retorna nome do arquivo ##################################################
 if __name__ == '__main__':
     parser = ArgumentParser(prog="Segmentador")
