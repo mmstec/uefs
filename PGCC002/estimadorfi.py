@@ -189,7 +189,7 @@ def segmentador(executar, imagem, cor, projeto_id, projeto_nome, imagem_id, imag
         # destacando a segmentacao sobre a imagem original (osfuscada)
         sobreposicao = cv2.addWeighted(segmentacao, 0.9, imagem, 0.4, 0)
 
-        # USEI A TÉCNICA, MAS SEM MELHORIA NOS RESULTADOS
+        # USEI A TÉCNICA, MAS SEM MELHORIA NOS TESTES DE PROVA
         # desfoque = cv2.GaussianBlur(mascara, (5, 5), 0)
         # sobel_x = cv2.Sobel(desfoque, cv2.CV_64F, 1, 0, ksize=3)  # filtro eixo x (limiar)
         # sobel_y = cv2.Sobel(desfoque, cv2.CV_64F, 0, 1, ksize=3)  # filtro eixo y
